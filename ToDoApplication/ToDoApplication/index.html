@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SpaceDock Application</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="well-lg">
+        <input type="text" id="fueltype" name="ships" placeholder="Enter Fuel Type" />
+        <input type="text" id="capacity" name="ships" placeholder="Enter Capacity" />
+        <input type="text" id="crew" name="ships" placeholder="Enter # Crew" />
+        <input type="text" id="name" name="ships" placeholder="Enter Name of Ship" />
+        <button id="add" class="btn btn-primary" onclick="spaceDockApp.addShip()">DOCK</button>
+    </div>
+    <h3>Currently Docked</h3>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <a id="modal-691989" href="#modal-container-691989" role="button" class="btn btn-default" data-toggle="modal">Edit</a>
+                <button id="delete" class="btn btn-default" onclick="spaceDockApp.delBtn()">Delete</button>
+                <div class="modal fade in" id="modal-container-691989" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    Edit
+                                </h4>
+                            </div>
+                            <div id="overlay" class="modal-body">
+                                <input type="text" id="fueltype1" name="ships" placeholder="Enter Fuel Type" /><br />
+                                <input type="text" id="capacity1" name="ships" placeholder="Enter Capacity" /><br />
+                                <input type="text" id="crew1" name="ships" placeholder="Enter # Crew" /><br />
+                                <input type="text" id="name1" name="ships" placeholder="Enter Name of Ship" /><br />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button onclick="spaceDockApp.saveBtn()" type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <table class='table table-bordered'>
+
+            <tr>
+
+                <th class='text-success'>Fuel Type</th>
+                <th class='text-success'>Capacity</th>
+                <th class='text-success'>Crew</th>
+                <th class='text-success'>Name</th>
+
+            </tr>
+            <tbody id="someshit"></tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>

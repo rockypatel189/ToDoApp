@@ -1,0 +1,24 @@
+﻿body {
+    text-align: center;
+    background-image: url("http://sheedsmachine.files.wordpress.com/2012/09/1296635181806.jpg");
+    background-color: black;
+    background-size: 95%;
+}
+table {
+    text-align: center;
+    background-color: white;
+    
+}
+tr{
+    text-align:center;
+}
+h3{
+    color: white;
+}
+.taste {
+    min-height: 100%;
+    min-width: 100%;
+}
+th {
+    color: white;
+}
